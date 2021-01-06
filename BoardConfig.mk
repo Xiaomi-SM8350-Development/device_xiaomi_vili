@@ -24,6 +24,7 @@ BOOT_KERNEL_MODULES := \
     apr_dlkm.ko \
     fts_touch_spi_k8.ko \
     hwid.ko \
+    msm_drm.ko \
     q6_notifier_dlkm.ko \
     q6_pdr_notifier_dlkm.ko \
     qti_battery_charger_odin.ko \
