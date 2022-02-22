@@ -15,6 +15,10 @@ TARGET_OTA_ASSERT_DEVICE := vili
 # Board
 TARGET_BOOTLOADER_BOARD_NAME := vili
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_vili
+TARGET_RECOVERY_DEVICE_MODULES := libinit_vili
+
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/vili_QGKI.config
 
