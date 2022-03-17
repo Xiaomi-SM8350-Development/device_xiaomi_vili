@@ -1,7 +1,7 @@
 service vendor.fps_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.xiaomi_vili
     class late_start
     user system
-    group system input uhid
+    group system drmrpc diag input uhid
 
 on init
     chmod 0666 /dev/goodix_fp
