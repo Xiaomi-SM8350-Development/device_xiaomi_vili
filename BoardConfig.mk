@@ -18,6 +18,20 @@ TARGET_BOOTLOADER_BOARD_NAME := vili
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/vili_QGKI.config
 
+# Kernel modules
+BOOT_KERNEL_MODULES := \
+    adsp_loader_dlkm.ko \
+    apr_dlkm.ko \
+    fts_touch_spi_k8.ko \
+    hwid.ko \
+    q6_notifier_dlkm.ko \
+    q6_pdr_notifier_dlkm.ko \
+    qti_battery_charger_odin.ko \
+    snd_event_dlkm.ko \
+    xiaomi_touch.ko
+
+BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(BOOT_KERNEL_MODULES)
+
 # Partitions
 BOARD_DTBOIMG_PARTITION_SIZE := 25165824
 
