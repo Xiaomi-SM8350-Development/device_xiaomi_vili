@@ -9,6 +9,9 @@ DEVICE_PATH := device/xiaomi/vili
 # Inherit from sm8350-common
 include device/xiaomi/sm8350-common/BoardConfigCommon.mk
 
+# Assert
+TARGET_OTA_ASSERT_DEVICE := vili
+
 # Board
 TARGET_BOOTLOADER_BOARD_NAME := vili
 
