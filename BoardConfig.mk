@@ -15,6 +15,10 @@ TARGET_OTA_ASSERT_DEVICE := vili
 # Board
 TARGET_BOOTLOADER_BOARD_NAME := vili
 
+# HIDL
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/vili_framework_compatibility_matrix.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest_vili.xml
+
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_vili
 TARGET_RECOVERY_DEVICE_MODULES := libinit_vili
