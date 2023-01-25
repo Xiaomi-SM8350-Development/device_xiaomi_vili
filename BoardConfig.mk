@@ -47,6 +47,9 @@ BOARD_DTBOIMG_PARTITION_SIZE := 25165824
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
+# Sepolicy
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
 # Vibrator
 SOONG_CONFIG_xiaomiSm8350Vars_vibrator_use_effect_stream := true
 
