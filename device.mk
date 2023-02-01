@@ -18,8 +18,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/sound_trigger_platform_info.xml
 
 # Fastcharge
-PRODUCT_PACKAGES += \
-    vendor.lineage.fastcharge@1.0-service.vili
+# TODO: Needs some polishing, some access denied shit
+# PRODUCT_PACKAGES += \
+#     vendor.lineage.fastcharge@1.0-service.vili
 
 # Init
 PRODUCT_PACKAGES += \
