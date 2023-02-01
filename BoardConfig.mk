@@ -41,6 +41,9 @@ TARGET_OTA_ASSERT_DEVICE := vili
 BOARD_DTBOIMG_PARTITION_SIZE := 25165824
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 113254576128
 
+# Power
+TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/touch/tp_dev/double_tap"
+
 # Vibrator
 SOONG_CONFIG_xiaomiSm8350Vars_vibrator_use_effect_stream := true
 
